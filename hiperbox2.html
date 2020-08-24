@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Korty Dobczyce</title>
+  <link href="C:/Users/mobil/Notepad++/antares/styles/index_style.css" type="text/css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap" rel="stylesheet">
+ </head>
+ 
+ <body class="gallery">
+ <div class="pictures">
+  <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />Zdjęcia nie zostały jeszcze przesłane na stronę<br />PRZEPRASZAMY!
+</div>
+
+ </body>
+ </html>
+ <script>
+ var slideIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > x.length) {slideIndex = 1}
+  x[slideIndex-1].style.display = "block";
+  setTimeout(carousel, 1000); // Change image every 1 seconds
+}
+</script>

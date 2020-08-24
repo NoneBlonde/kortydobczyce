@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Korty Dobczyce</title>
+  <link href="C:/Users/mobil/Notepad++/antares/styles/index_style.css" type="text/css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap" rel="stylesheet">
+ </head>
+ 
+ <body class="gallery">
+ <div class="pictures">
+  <img class="mySlides" src="C:/Users/mobil/Notepad++/antares/images/courts2.jpg">
+  <img class="mySlides" src="C:/Users/mobil/Notepad++/antares/images/courts3.jpg">
+  <img class="mySlides" src="C:/Users/mobil/Notepad++/antares/images/courts4.jpg">
+  <img class="mySlides" src="C:/Users/mobil/Notepad++/antares/images/courts5.jpg">
+  <img class="mySlides" src="C:/Users/mobil/Notepad++/antares/images/courts6.jpg">
+</div>
+
+ </body>
+ </html>
+ <script>
+ var slideIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > x.length) {slideIndex = 1}
+  x[slideIndex-1].style.display = "block";
+  setTimeout(carousel, 1000); // Change image every 1 seconds
+}
+</script>
